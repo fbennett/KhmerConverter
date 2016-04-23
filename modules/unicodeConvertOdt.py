@@ -185,6 +185,7 @@ class unicodeConvertOdt:
             style = styleName
         elif (styleName in self.nonConvertibleStyle):
             return False
+        elif (parentStyleName in self.convertibleStyle):
             style = parentStyleName
         else:
             return False
